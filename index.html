@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7d17636476.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 1400);
+      }
+
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("animation-div").style.display = "block";
+      }
+    </script>
+    <link rel="stylesheet" href=".public/css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>ohmyfood</title>
+  </head>
+  <body onload="myFunction()">
+    <!-- Loader -->
+    <div id="loader"></div>
+    <div id="animation-div" class="animation-loader">
+      <!-- Header -->
+      <header>
+        <h1 class="header__logo">ohmyfood</h1>
+      </header>
+
+      <main>
+        <!-- Localisation -->
+        <section class="localisation">
+          <i class="fas fa-map-marker-alt localisation__icon"></i>
+          <span class="localisation__txt">Paris, Belleville</span>
+        </section>
+        <section class="reserv">
+          <h2 class="reserv__title">Réservez le menu qui vous convient</h2>
+          <p class="reserv__description">
+            Découvrez des restaurants d'exception, séléctionnés par nos soins
+          </p>
+          <a href="#restau_link" class="reserv__btn btn-omf">
+            Explorer nos restaurants</a
+          >
+        </section>
+        <!-- Fonctionnement -->
+        <section class="fct">
+          <h2 class="fct__title">Fonctionnement</h2>
+          <div class="fct__list">
+            <div class="fct__element_list">
+              <div class="fct__numero">1</div>
+              <i class="fct__icon fas fa-mobile-alt"></i>
+              <span class="fct__txt">Choisissez un restaurant</span>
+            </div>
+
+            <div class="fct__element_list">
+              <div class="fct__numero">2</div>
+              <i class="fct__icon fas fa-list-ul"></i>
+              <span class="fct__txt">Composez votre menu</span>
+            </div>
+
+            <div class="fct__element_list">
+              <div class="fct__numero">3</div>
+              <i class="fct__icon fas fa-store"></i>
+              <span class="fct__txt">Dégustez au restaurant</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Restaurants -->
+        <section class="restaurants" id="restau_link">
+          <h2 class="restaurants__title">Restaurants</h2>
+
+          <div class="all_restau">
+            <a href="pages/la_palette_du_gout.html" class="restau">
+              <span class="restau__nouveau">Nouveau</span>
+              <img
+                class="restau__photo"
+                src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                alt="La palette du goût"
+              />
+              <div class="restau__txt">
+                <h3 class="restau__title">La palette du goût</h3>
+                <span class="restau__quartier">Ménilmontant</span>
+                <svg
+                  class="heart-main"
+                  viewBox="0 0 512 512"
+                  width="100"
+                  title="heart"
+                >
+                  <path
+                    fill="white"
+                    stroke="black"
+                    stroke-opacity="0.8"
+                    stroke-width="35"
+                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                  />
+                  <linearGradient id="MyGradient">
+                    <stop offset="10%" stop-color="#9356DC" />
+                    <stop offset="90%" stop-color="#FF79DA" />
+                  </linearGradient>
+                </svg>
+              </div>
+            </a>
+
+            <a href="pages/la_note_enchantee.html" class="restau">
+              <span class="restau__nouveau">Nouveau</span>
+              <img
+                class="restau__photo"
+                src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                alt="La note enchantée"
+              />
+              <div class="restau__txt">
+                <h3 class="restau__title">La note enchantée</h3>
+                <span class="restau__quartier">Charonne</span>
+                <svg
+                  class="heart-main"
+                  viewBox="0 0 512 512"
+                  width="100"
+                  title="heart"
+                >
+                  <path
+                    fill="white"
+                    stroke="black"
+                    stroke-opacity="0.8"
+                    stroke-width="35"
+                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                  />
+                  <linearGradient id="MyGradient">
+                    <stop offset="10%" stop-color="#9356DC" />
+                    <stop offset="90%" stop-color="#FF79DA" />
+                  </linearGradient>
+                </svg>
+              </div>
+            </a>
+
+            <a href="pages/a_la_francaise.html" class="restau">
+              <img
+                class="restau__photo"
+                src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                alt="À la française"
+              />
+              <div class="restau__txt">
+                <h3 class="restau_title">À la française</h3>
+                <span class="restau__quartier">Cité Rouge</span>
+                <svg
+                  class="heart-main"
+                  viewBox="0 0 512 512"
+                  width="100"
+                  title="heart"
+                >
+                  <path
+                    fill="white"
+                    stroke="black"
+                    stroke-opacity="0.8"
+                    stroke-width="35"
+                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                  />
+                  <linearGradient id="MyGradient">
+                    <stop offset="10%" stop-color="#9356DC" />
+                    <stop offset="90%" stop-color="#FF79DA" />
+                  </linearGradient>
+                </svg>
+              </div>
+            </a>
+
+            <a href="pages/le_delice_des_sens.html" class="restau">
+              <img
+                class="restau__photo"
+                src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                alt="Le délice des sens"
+              />
+              <div class="restau__txt">
+                <h3 class="restau__title">Le délice des sens</h3>
+                <span class="restau__quartier">Folie-Méricourt</span>
+                <svg
+                  class="heart-main"
+                  viewBox="0 0 512 512"
+                  width="100"
+                  title="heart"
+                >
+                  <path
+                    fill="white"
+                    stroke="black"
+                    stroke-opacity="0.8"
+                    stroke-width="35"
+                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                  />
+                  <linearGradient id="MyGradient">
+                    <stop offset="10%" stop-color="#9356DC" />
+                    <stop offset="90%" stop-color="#FF79DA" />
+                  </linearGradient>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </section>
+      </main>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer__cont">
+          <span class="footer__title">ohmyfood</span>
+          <ul class="footer__list">
+            <li class="footer__element_list">
+              <a class="footer__link" href="#"
+                ><i class="footer__icon fas fa-utensils"></i>Proposer un
+                restaurant</a
+              >
+            </li>
+            <li class="footer__element_list">
+              <a class="footer__link" href="#"
+                ><i class="footer__icon fas fa-hands-helping"></i>Devenir
+                partenaire</a
+              >
+            </li>
+            <li class="footer__element_list">
+              <a class="footer__link" href="#">Mentions légales</a>
+            </li>
+            <li class="footer__element_list">
+              <a class="footer__link" href="mailto:contact@ohmyfood.com"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

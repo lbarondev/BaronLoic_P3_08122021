@@ -1,0 +1,12 @@
+@import "./Utils/variables", "./Utils/mixins", "./Utils/keyframes";
+
+@import "./Base/typography";
+
+@import "./Layout/footer", "./Layout/header", "./Layout/body",
+  "./Layout/loader.scss";
+
+@import "./Pages/localisation", "./Pages/reserv", "./Pages/fonctionnement",
+  "./Pages/restau";
+
+@import "./Components/button", "./Components/photo-page-restau",
+  "./Components/menu", "./Components/logo-coeur";

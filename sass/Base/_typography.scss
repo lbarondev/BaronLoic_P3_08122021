@@ -1,0 +1,28 @@
+.footer__title,
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 2rem;
+}
+
+h2 {
+  font-weight: bold;
+}
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+
+  @include tablet-mobile-only {
+    font-size: 1rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+h4,
+p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

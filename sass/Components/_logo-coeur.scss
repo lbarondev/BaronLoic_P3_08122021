@@ -1,0 +1,24 @@
+/* Animation Hover Coeur */
+
+.heart-main {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  overflow: visible;
+  right: 20px;
+  bottom: 20px;
+}
+
+#heart-menu {
+  width: 30px;
+  height: 30px;
+  overflow: visible;
+  position: absolute;
+  left: 87%;
+  top: 50%;
+}
+
+.heart-main:hover path {
+  animation: coeur-anim 500ms linear forwards;
+  transform-origin: center;
+}

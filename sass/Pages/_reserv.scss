@@ -1,0 +1,16 @@
+.reserv {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin: 0;
+  }
+
+  &__description {
+    font-weight: 300;
+    margin: 1.5rem 0rem;
+  }
+}

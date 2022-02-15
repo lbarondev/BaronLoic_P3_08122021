@@ -1,0 +1,80 @@
+/* Animation Coeur */
+
+@keyframes coeur-anim {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.8);
+    fill: transparent;
+    stroke: transparent;
+  }
+
+  100% {
+    fill: url(#MyGradient);
+    transform: scale(1.05);
+    stroke: transparent;
+  }
+}
+/* Animation Lancement Page Restau */
+
+@keyframes anim-launch {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@for $i from 2 to 4 {
+  .delay-#{$i} {
+    animation-delay: #{calc($i / 3)}s;
+  }
+}
+
+/* Animation Loader */
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) scale(1.5);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(0.5);
+  }
+}
+
+@keyframes animationloader {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animationloader {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}

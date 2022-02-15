@@ -1,0 +1,107 @@
+.menu {
+  background: #f4f4f4;
+  max-width: 1800px;
+  margin: auto;
+  border-radius: 4rem 4rem 0 0;
+  margin-top: -60px;
+  z-index: auto;
+  position: relative;
+
+  &__title {
+    padding: 1rem 3rem 0em;
+    position: relative;
+    font-family: "Shrikhand", cursive;
+  }
+  &__restau {
+    padding: 1em 2em 0em;
+    animation-name: anim-launch;
+    animation-fill-mode: both;
+    animation-duration: 1000ms;
+    animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+    max-width: 100%;
+    overflow: hidden;
+  }
+  &__subtitle {
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  &__borderbottom {
+    border-bottom: 3px solid $tertiary;
+    position: relative;
+    bottom: 20px;
+    height: 5px;
+    width: 4rem;
+  }
+}
+.all_menu {
+  @include laptop-only {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.meal {
+  display: flex;
+  cursor: pointer;
+  background: white;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem 1rem 1rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+
+  &__txt {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &h4,
+  &p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__price {
+    font-weight: 700;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  &__check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $tertiary;
+    width: 5rem;
+    transition-duration: 0.4s;
+    margin: -1rem -6rem -1rem 1rem;
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rem;
+    color: $tertiary;
+    font-size: 1.2rem;
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+  }
+  &:hover &__check {
+    margin-right: -1rem;
+  }
+
+  &:hover &__icon {
+    transform: rotate(0);
+  }
+}
+
+.bouton_commander {
+  text-align: center;
+  padding: 10%;
+}

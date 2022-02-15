@@ -1,0 +1,28 @@
+@mixin btn-anim {
+  background-image: $colorbutton;
+  background-color: rgb(100, 10, 48);
+  color: white;
+  font-weight: 600;
+  padding: 1em 1em;
+  margin: auto;
+  border-radius: 50px;
+  transition: opacity 400ms;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  &:hover {
+    opacity: 0.8;
+    box-shadow: rgba(0, 0, 0, 0.65) 0px 5px 15px;
+  }
+}
+
+@mixin tablet-mobile-only {
+  @media screen and (max-width: map-get($breakpoints, tablet-mobile)) {
+    @content;
+  }
+}
+
+@mixin laptop-only {
+  @media screen and (min-width: map-get($breakpoints, tablet-mobile)) {
+    @content;
+  }
+}

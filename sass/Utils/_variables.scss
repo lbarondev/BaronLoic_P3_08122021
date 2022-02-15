@@ -1,0 +1,11 @@
+$primary: #9356dc;
+$secondary: #ff79da;
+$tertiary: #99e2d0;
+$shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+  rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+$colorbutton: linear-gradient(180deg, $secondary 5%, $primary 90%);
+$colorloader: linear-gradient(180deg, #cefff2 10%, $tertiary 90%);
+$breakpoints: (
+  tablet-mobile: 1280px,
+  mobile: 768px,
+);

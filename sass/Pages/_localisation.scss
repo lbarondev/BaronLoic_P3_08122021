@@ -1,0 +1,16 @@
+.localisation {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background: #e5e5e5;
+  box-shadow: inset rgba(0, 0, 0, 0.24) 0px 3px 5px;
+
+  &__txt {
+    font-weight: 800;
+    font-size: 1.1rem;
+  }
+
+  &__icon {
+    margin-right: 1rem;
+  }
+}

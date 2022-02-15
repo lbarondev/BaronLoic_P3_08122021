@@ -1,0 +1,56 @@
+.fct {
+  width: 95%;
+  padding: 2em 0em 3em 2em;
+  @include tablet-mobile-only {
+    padding: 1em 0em 2em 1em;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-left: 1rem;
+    @include tablet-mobile-only {
+      align-items: center;
+    }
+  }
+  &__element_list {
+    font-size: 1.4rem;
+    padding: 2rem;
+    background-color: #f2f2f2;
+    border-radius: 1.5rem;
+    box-shadow: $shadow;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    width: 25%;
+    position: relative;
+    @include tablet-mobile-only {
+      width: 100%;
+      margin: 2% 0;
+    }
+    &:hover {
+      background: #ece0fc;
+      -webkit-transition: background 500ms;
+      transition: background 500ms;
+    }
+  }
+
+  &__numero {
+    background: $primary;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.8rem;
+    width: 1.8rem;
+    border-radius: 50rem;
+    position: absolute;
+    left: -1rem;
+  }
+
+  &__txt {
+    font-weight: bold;
+  }
+}

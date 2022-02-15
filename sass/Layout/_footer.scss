@@ -1,0 +1,28 @@
+.footer {
+  background-color: #3d3d3d;
+  &__cont {
+    padding: 1rem;
+  }
+
+  &__title {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding-left: 0px;
+  }
+
+  &__element_list {
+    margin: 0.5rem 0;
+  }
+  &__icon {
+    margin-right: 0.5rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+  }
+}

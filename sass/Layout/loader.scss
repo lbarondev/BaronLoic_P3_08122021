@@ -1,0 +1,32 @@
+/* Animation du loader */
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 175px;
+  height: 175px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid white;
+  border-radius: 50%;
+  border-top: 18px solid #9356dc;
+  border-bottom: 18px solid #ff79da;
+  background: $colorloader;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+/* Animation de page */
+
+.animation-loader {
+  position: relative;
+  -webkit-animation-name: animationloader;
+  -webkit-animation-duration: 2s;
+  animation-name: animationloader;
+  animation-duration: 2s;
+}
+
+#animation-div {
+  display: none;
+}
