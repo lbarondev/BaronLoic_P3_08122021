@@ -34,39 +34,24 @@
 }
 
 /* Animation Loader */
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
 @keyframes spin {
   0% {
     transform: rotate(0deg) scale(1.5);
+    opacity: 1;
   }
   100% {
-    transform: rotate(360deg) scale(0.5);
+    transform: rotate(360deg) scale(0);
+    opacity: 0;
   }
 }
 @keyframes animationloader {
-  from {
-    bottom: -100px;
+  0% {
     opacity: 0;
   }
-  to {
-    bottom: 0;
-    opacity: 1;
-  }
-}
-@-webkit-keyframes animationloader {
-  from {
-    bottom: -100px;
+  50% {
     opacity: 0;
   }
-  to {
-    bottom: 0px;
+  100% {
     opacity: 1;
   }
 }
@@ -149,8 +134,8 @@ body {
 /* Animation du loader */
 #loader {
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 49%;
+  top: 40%;
   z-index: 1;
   width: 175px;
   height: 175px;
@@ -160,21 +145,12 @@ body {
   border-top: 18px solid #9356dc;
   border-bottom: 18px solid #ff79da;
   background: linear-gradient(180deg, #cefff2 10%, #99e2d0 90%);
-  -webkit-animation: spin 1.5s linear infinite;
-  animation: spin 1.5s linear infinite;
+  animation: spin 2s linear forwards;
 }
 
 /* Animation de page */
 .animation-loader {
-  position: relative;
-  -webkit-animation-name: animationloader;
-  -webkit-animation-duration: 2s;
-  animation-name: animationloader;
-  animation-duration: 2s;
-}
-
-#animation-div {
-  display: none;
+  animation: animationloader 2.5s ease-in-out;
 }
 
 .localisation {
