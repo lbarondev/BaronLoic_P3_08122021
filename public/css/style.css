@@ -112,6 +112,10 @@ p {
   color: white;
 }
 
+i {
+  font-family: FontAwesome;
+}
+
 header h1 {
   text-align: center;
   margin: 0;
